@@ -1,2 +1,4 @@
+from circles.circle import Circle
+
 bounding_box_diagonal = 25.1
-circle = Circle(bbd_to_radius(bounding_box_diagonal))
+circle = Circle.from_bbd(bounding_box_diagonal)
