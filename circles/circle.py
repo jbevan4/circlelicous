@@ -21,14 +21,11 @@ class Circle:
     def radius(self, radius):
         self.diameter = radius * 2
 
-    # move to another class
     def area(self):
-        # return AreaCalculator(PerimeterCalculator()).area()
         perimeter = self.__perimeter()
         calculated_radius = perimeter / pi / 2
         return calculated_radius ** 2 * pi
 
-    # move to another class
     def perimeter(self):
         return self.radius * 2 * pi
 
